@@ -1,5 +1,5 @@
 import { Button, TextInput } from "frog";
-import { app } from "./index.js";
+import { app } from "../api/index.js";
 
 export const frame = () => {
   app.frame("/", (c) => {

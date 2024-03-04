@@ -1,6 +1,6 @@
-import { Frog } from 'frog';
-import { handle } from 'frog/vercel';
-import { frame } from './Frame';
+import { Frog } from "frog";
+import { handle } from "frog/vercel";
+import { frame } from "../lib/Frame.js";
 
 // Uncomment to use Edge Runtime.
 // export const config = {
@@ -8,7 +8,7 @@ import { frame } from './Frame';
 // }
 
 export const app = new Frog({
-  basePath: '/api',
+  basePath: "/api",
   // Supply a Hub API URL to enable frame verification.
   // hubApiUrl: 'https://api.hub.wevm.dev',
 });

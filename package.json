@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "frog vercel-build",
+    "build:api": "esbuild --bundle src/api/* --outdir=api --platform=node --format=esm",
+    "build": "npm run build:api && frog vercel-build",
     "dev": "frog dev",
     "deploy": "vercel"
   },
@@ -12,6 +13,7 @@
     "hono": "^4"
   },
   "devDependencies": {
+    "esbuild": "^0.20.1",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "vercel": "^33.5.3"

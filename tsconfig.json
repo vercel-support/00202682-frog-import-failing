@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "dist",
     "target": "ESNext",
     "module": "ESNext",
     "esModuleInterop": true,

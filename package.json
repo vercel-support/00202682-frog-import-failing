@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:api": "esbuild --bundle src/api/* --outdir=api --platform=node --format=esm",
+    "build:api": "esbuild --bundle src/api/* --outdir=dist/api --platform=node --format=esm",
     "build": "npm run build:api",
     "dev": "frog dev",
     "deploy": "vercel"
